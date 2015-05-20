@@ -23,8 +23,8 @@
         <li>Add a two way binding to render <em>$scope.dynamic</em> inside of em#dynamic</li>
       </ol>
 
-      <div id="put-a-controller-on-me">
-        I should be a controller with a value on the $scope: <em id="dynamic"></em>
+      <div id="put-a-controller-on-me" ng-controller='FirstController'>
+        I should be a controller with a value on the $scope: <em id="dynamic">{{dynamic}}</em>
       </div>
       <br>
       <p><strong>Note:</strong><em> Open your browsers developer tools console and make sure the tests are passing.</em></p>
