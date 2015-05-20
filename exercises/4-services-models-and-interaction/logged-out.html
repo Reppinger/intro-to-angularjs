@@ -1,17 +1,17 @@
-<form id="logged-out">
+<form id="logged-out" ng-submit="login()">
   <fieldset class="radius">
     <div class="row">
       <div class="large-6 columns">
-        <input type="text" name="username" placeholder="username" required/>
+        <input type="text" name="username" placeholder="username" required ng-model="credentials.username"/>
       </div>
         <div class="large-6 columns">
-        <input type="password" name="password" placeholder="password" required/>
+        <input type="password" name="password" placeholder="password" required ng-model="credentials.password"/>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 columns">
-        <button type="submit" class="button large expand radius">Log In</button>
+        <button type="submit" class="button large expand radius" ng-submit="login()">Log In</button>
       </div>
     </div>
   </fieldset>
